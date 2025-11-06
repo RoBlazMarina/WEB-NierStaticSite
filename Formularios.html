@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="stylesheet" href="estilos.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>YORHA System</title>
 </head>
 <body>
         <!--Cabecera-->
@@ -22,6 +23,80 @@
     <main>
         <section>
             <h2>Formulario de incidencias</h2>
+            <form>
+                <fieldset >
+                    <legend>Datos</legend>
+                    <ul> <!--Usamos listas desordenadas para que los formularios queden más ordenados.-->
+                        <li>
+                            <label for="mail">Correo: </label>
+                            <input type="email" id="mail" name="user_mail" placeholder="example@yorha.com">
+                        </li>
+                        <li>
+                            <label for="lista">Modelo: </label>
+                            <select id="lista" name="opciones">
+                                <option value="opcion1">Tipo B</option>
+                                <option value="opcion2">Tipo C</option>
+                                <option value="opcion3">Tipo D</option>
+                                <option value="opcion4">Tipo H</option>
+                                <option value="opcion5">Tipo M</option>
+                                <option value="opcion6">Tipo O</option>
+                                <option value="opcion7">Tipo S</option>
+                                <option value="opcion8">Oficial</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="number">Número de modelo:</label>
+                            <input type="number" id="number" min="1" max="1000">
+                        </li>
+                        <li>
+                            <label for="identification">ID:</label>
+                            <input type="text" id="identification" placeholder="ej: S12" pattern="[A-Z]" required>
+                        </li>
+
+
+                    </ul>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>Incidente:</legend>
+                    <ul>
+                        <li>
+                            <label for="level">Riesgo estimado: </label>
+                            <input type="range" id="level" min="0" max="100">
+                        </li>
+                        <li>
+                            <label for="priority">Prioridad</label>
+                            <input type="radio" id="baja" name="priority" value="baja">
+                            <label for="baja">Baja</label> <!--Lo ponemos en casillas para que esté reconocido en el css-->
+                            <input type="radio" id="media" name="priority" value="media">
+                            <label for="media">Media</label>
+                            <input type="radio" id="alta" name="priority" value="alta">
+                            <label for="alta">Alta</label>
+                            <input type="radio" id="urgente" name="priority" value="urgente">
+                            <label for="urgente">Urgente</label>
+                        </li>
+                        <li>
+                            <label for="resume">Informe: </label>
+                            <input type="text" id="resume">
+                        </li>
+
+                    </ul>
+
+                </fieldset>
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            
+
+
+            </form>
+
+
+
+
+
+
+
         </section>
     </main>
 
