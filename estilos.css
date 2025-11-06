@@ -1,25 +1,42 @@
 /* ===== SELECTORES BÁSICOS (por etiqueta) ===== */
 
 
+body {
+    /* Importar fuente web externa */
+
+    margin-left: 20px; /*==Para dejar algo de márgen en la izquierda.==*/
+    margin-right: 20px;
+
 nav{
-    font-family: 'Baskerville oldface';
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+nav ul{ /*===== Aquí vamos a tocar la disposición de la lista=====*/
+    list-style: none;
     margin: 0;
     padding: 0;
-    background: linear-gradient(100deg, #2a2a2a 0%, #1d1d1d 50%, #343434 100%);
-    background-attachment: fixed;
-    color: #ffffff;
-    line-height: 1.6;
-    box-sizing: border-box;
+    display: flex; /*==Para que se alineen en horizontal==*/
+   
 
 }
-
-body {
-    font-family: 'Baskerville oldface';
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(100deg, #2a2a2a 0%, #1d1d1d 50%, #343434 100%);
-    background-attachment: fixed;
-    color: #ffffff;
-    line-height: 1.6;
-    box-sizing: border-box;
+nav li{
+    margin-right: 20px; /*==Para que haya margen entre los elementos del nav.==*/
+}
+.main{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 20px /*==Para que exista cierto margen entre las columnas.==*/
+    
+       
 }    
+main{
+    background-color: black;
+    background-attachment: fixed;
+    color: aliceblue;
+   padding: 20px;/*==Para que haya cierto margen con el borde==*/
+}
+
+}
