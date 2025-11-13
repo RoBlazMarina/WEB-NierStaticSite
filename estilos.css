@@ -7,6 +7,7 @@
     src: url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
     font-weight: normal;
     font-style: normal;
+    
 }
 
 
@@ -15,8 +16,9 @@
 
 
 body {
-    
-    font-family: 'Oxanium', sans-serif;
+    background-color: black;
+    font-family: sans-serif;
+    color: rgb(231, 228, 208);
     margin-left: 20px; /*==Para dejar algo de márgen en la izquierda.==*/
     margin-right: 20px;
 
@@ -46,14 +48,14 @@ nav li{
        
 }    
 main{
-    background-color: black;
+    background-color: rgb(231, 228, 208);
     background-attachment: fixed;
-    color: aliceblue;
+    color: black;
    padding: 20px;/*==Para que haya cierto margen con el borde==*/
 }
 p{
- 
- color: aliceblue;
+ font-family: 'Times New Roman', Times, serif;
+ color: black;
 
 }
 
