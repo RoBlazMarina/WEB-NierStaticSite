@@ -1,9 +1,22 @@
+/*==CSS Página de YORHA SYSTEM==*/
+
+
+
+@font-face {  /* Importar fuente web externa */
+    font-family: 'Oxanium';
+    src: url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 /* ===== SELECTORES BÁSICOS (por etiqueta) ===== */
 
 
 body {
-    /* Importar fuente web externa */
-
+    
+    font-family: 'Oxanium', sans-serif;
     margin-left: 20px; /*==Para dejar algo de márgen en la izquierda.==*/
     margin-right: 20px;
 
@@ -37,6 +50,11 @@ main{
     background-attachment: fixed;
     color: aliceblue;
    padding: 20px;/*==Para que haya cierto margen con el borde==*/
+}
+p{
+ 
+ color: aliceblue;
+
 }
 
 }
