@@ -58,5 +58,10 @@ p{
  color: black;
 
 }
+#tabla{
+
+    border-collapse:inherit;
+    vertical-align: middle;
+}
 
 }
