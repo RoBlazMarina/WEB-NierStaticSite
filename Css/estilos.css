@@ -58,10 +58,49 @@ p{
  color: black;
 
 }
-#tabla{
+#table-container { /*==Intento de usar el identificador==*/
+    background-color:black;
+    border: 10px;
+    border-color: black;
+    box-sizing: border-box;
+    padding: 2%;
+    border: 2px;
+    margin: auto;
+    
 
-    border-collapse:inherit;
-    vertical-align: middle;
+   
+}
+.table{
+    background-color: rgb(20, 20, 20);
+    border-width: 2px;
+    border-style: inset;
+    border-color: rgb(231, 228, 208);
+    color:rgb(231, 228, 208);
+    
+
+}
+#tabletitle{
+    background-color: blanchedalmond;
+    border-width: 5px;
+    border-color: black;
+    border-style: dashed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+
+}
+
+h2{text-align: center;}
+
+header {
+        background-image: url('Imagenes\Bunker.png');
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+        
+
 }
 
 }
