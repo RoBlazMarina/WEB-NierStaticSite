@@ -14,34 +14,68 @@
 
 /* ===== SELECTORES  (por etiqueta) ===== */
 
-body {
+body { /*==Selector de etiqueta==*/
     background-color: black;
     font-family: sans-serif;
     color: rgb(231, 228, 208);
-    margin-left: 20px; /*==Para dejar algo de márgen en la izquierda.==*/
-    margin-right: 20px;
+    margin: 0;
 
-   
-    nav{
-        position: fixed;
+}   
+nav{ /*==Selector de etiqueta==*/
+        position:fixed;
         top: 0;
         width: 100%;
         z-index: 100;
-    }
-    nav ul{ /*===== Aquí vamos a tocar la disposición de la lista=====*/
+        background-color: rgb(0, 0, 0);
+        opacity: 80%; /*==De esta forma en el hover podremos ponerle más opcacidad==*/
+        padding:1px 10px;
+}
+
+nav ul{ /*===== Aquí vamos a tocar la disposición de la lista=====*/
         list-style: none;
-        margin: 0;
-        padding: 0;
+        padding-right: 10px;
         display:flex; /*==Para que se alineen en horizontal==*/
-        align-items: center;
+        justify-content: right /*===Para que los elementos del nav se alineen a la derecha===*/;
     
 
-    }
-    nav li{
-        margin-right: 20px; /*==Para que haya margen entre los elementos del nav.==*/
-        align-items: center;
-    }
-    .main{
+}
+
+ nav li{
+      
+      margin-right: 20px; /*==Para que haya margen entre los elementos del nav.==*/
+  }
+
+  nav a {  /*== Esto hace referencia a todos los elementos dentro del nav==*/
+    display: block;
+    margin-right: 10px;
+    padding:0;
+    color: rgb(231, 228, 208);
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 3px solid rgb(231, 228, 208);
+    text-decoration: none; /*== Para quitar el subrayado de los enlaces==*/
+}
+header{ /*==Selector de etiqueta==*/
+    margin:0;
+    background-image: url("../Imágenes/Bunker.png"); /*=Metemos imagen de fondo y definimos caracterísitcas=*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    padding-top: 50px;
+    padding-left: 30px;
+    
+
+}
+
+
+    
+
+
+
+    .main{  /*==Selector de clase==*/
         display: grid;
         grid-template-columns: 3fr 1fr;
         grid-gap: 20px /*==Para que exista cierto margen entre las columnas.==*/
@@ -52,7 +86,7 @@ body {
         background-color: rgb(231, 228, 208);
         background-attachment: fixed;
         color: black;
-    padding: 20px;/*==Para que haya cierto margen con el borde==*/
+        padding: 20px;/*==Para que haya cierto margen con el borde==*/
         margin-left: 3px;
     }
     p{
@@ -95,13 +129,10 @@ body {
         
 
     }
+  
 
     h2{text-align: center;}
 
 
-*{
-    background-color:black;
-    color: rgb(231, 228, 208);
-    font: 'Oxanium', sans-serif;
-}
-}
+
+
