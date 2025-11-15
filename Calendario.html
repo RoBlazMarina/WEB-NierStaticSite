@@ -9,8 +9,7 @@
 </head>
 <body>
          <!--Cabecera-->
-    <header>
-        <h1>Yorha System</h1>
+    
     <!--Navegación-->
         <nav> <!--Cuando se haga en estilos, ya se pondrá la lista en horizontal-->
             <ul>
@@ -19,6 +18,8 @@
                 <li><a href="Formularios.html">FORMULARIO DE INCIDENCIAS</a></li>
             </ul>               
         </nav>
+    <header>
+        <h1>Yorha System</h1>
     </header>
     <main>
         <h2>Calendario semanal</h2>
@@ -28,7 +29,7 @@
                 <article> <!--Sección dedicada al Calendario-->
                     <div id="table-container">
                     
-                    <table class="table">
+                    <table>
                         <thead id="tabletitle">
                             <tr>
                                 <th>HORAS</th>
@@ -41,14 +42,14 @@
                                 <th>Domingo</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="tablebody">
                             <tr>
-                                <td>6:00-7:00</td>
+                                <td class="hours">6:00-7:00</td>
                                 <td colspan="7">Activación</td>
 
                             </tr>
                             <tr>
-                                <td>7:00-9:00</td>
+                                <td class="hours">7:00-9:00</td>
                                 <td>Consejo de la Humanidad</td>
                                 <td>Evaluación</td>
                                 <td rowspan="2">Despliegue</td>
@@ -59,25 +60,25 @@
 
                             </tr>
                             <tr>
-                                <td>9:00-11:00</td>
+                                <td class="hours">9:00-11:00</td>
                                 <td rowspan="2">Mantenimiento</td>
                                 <td>Descarga de suministros</td>
                                 <td rowspan="2">Mantenimiento</td>
                                 <td rowspan="2">Saneamiento (Habitaciones)</td>
                             </tr>
                             <tr>
-                                <td>11:00-13:00</td>
+                                <td class="hours">11:00-13:00</td>
                                 <td>Analisis de estadísticas</td>
                                 <td>Informes preliminares</td>
                                 <td colspan="2">Presentación de informes personales</td>
 
                             </tr>
                             <tr>
-                                <td>13:00-14:00</td>
+                                <td class="hours">13:00-14:00</td>
                                 <td colspan="7">Descanso</td>
                             </tr>
                             <tr>
-                                <td>14:00-16:00</td>
+                                <td class="hours">14:00-16:00</td>
                                 <td colspan="2" rowspan="2">Simulaciones</td>
                                 <td>Análisis post-misión</td>
                                 <td rowspan="2">Revisión de las instalaciones</td>
@@ -87,20 +88,20 @@
                                 
                             </tr>
                             <tr>
-                                <td>16:00-18:00</td>
+                                <td class="hours">16:00-18:00</td>
                                 <td rowspan="2">Comunicación periódica de Operadoras</td>
                                 <td rowspan="2">Simulaciones</td>
                                 <td rowspan="3">Ciclo Profundo</td>
                             </tr>
                             <tr>
-                                <td>18:00-20:00</td>
+                                <td class="hours">18:00-20:00</td>
                                 <td>Archivo</td>
                                 <td>Contacto con Resistencia</td>
                                 <td>Informe de Instalaciones</td>
                                 <td rowspan="2">Interacción</td>
                             </tr>
                             <tr>
-                                <td>20:00-21:00</td>
+                                <td class="hours">20:00-21:00</td>
                                 <td colspan="2">Ciclo de Reposo</td>
                                 <td>Reprogramación</td>
                                 <td colspan="2">Ciclo de Reposo</td>
