@@ -16,7 +16,7 @@
 
 body { /*==Selector de etiqueta==*/
     background-color: black;
-    font-family: sans-serif;
+    font-family: 'Oxanium', sans-serif;
     color: rgb(231, 228, 208);
     margin: 0;
 
@@ -50,6 +50,7 @@ nav ul{ /*===== Aquí vamos a tocar la disposición de la lista=====*/
     margin-right: 10px;
     padding:0;
     color: rgb(231, 228, 208);
+    font-family:'Oxanium', sans-serif;
     font-weight: bold;
     font-size: 14px;
     text-transform: uppercase;
@@ -64,13 +65,28 @@ header{ /*==Selector de etiqueta==*/
     background-repeat: no-repeat;
     background-position: center;
     height: 300px;
-    padding-top: 50px;
+    padding-top: 200px;
     padding-left: 30px;
+    box-sizing: border-box;
     
 
 }
 
+h1{
+    font-size: 50px;
+    padding-top: 0;
+    margin:0;
+    box-sizing: border-box;
+    
+}
 
+#subtitle{/*==Selector de clase==*/
+    vertical-align: sub;
+    font-size: smaller;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
     
 
 
