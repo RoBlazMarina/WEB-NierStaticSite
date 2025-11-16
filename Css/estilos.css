@@ -30,6 +30,7 @@ nav{ /*==Selector de etiqueta==*/
         opacity: 80%; /*==De esta forma en el hover podremos ponerle más opcacidad==*/
         padding: 0;
         margin: 0;
+        border: 0;
         box-sizing: border-box;
 }
 
@@ -37,9 +38,16 @@ nav ul{ /*===== Aquí vamos a tocar la disposición de la lista=====*/
         list-style: none;
         padding-right: 30px;
         margin: 0;
+        padding: 0;
+        border: 0;
         display:flex; /*==Para que se alineen en horizontal==*/
         justify-content: right /*===Para que los elementos del nav se alineen a la derecha===*/;
         box-sizing: border-box;
+
+}
+nav :hover{
+
+    opacity: 100%;
 
 }
 
@@ -48,6 +56,7 @@ nav ul{ /*===== Aquí vamos a tocar la disposición de la lista=====*/
     margin-right: 10px; /*==Para que haya margen entre los elementos del nav.==*/
     margin-left: 10px;
     padding: 5px;
+    border: 0;
     box-sizing: border-box;
     box-shadow: inset;
     }
@@ -60,12 +69,10 @@ nav li:hover{
     box-sizing: border-box;
     background-color: rgb(231, 228, 208);
     opacity: 100%;
-
+    border: 0;
     border-radius: 6px; /*==Así hacemos las esquinas redondeadas==*/
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.543);
-
-
-
+/*==El px del raidus indica la redondez del cuadrado. El shadow funciona en el siguiente orden: 2 primeros números, desplazamiento XY, 3º desenfoque y color==*/
 
 }
 
@@ -119,18 +126,22 @@ h1{
     padding-top: 0;
     margin:0;
     box-sizing: border-box;
+    text-shadow: 2px 2px 6px rgba(231, 228, 208, 0.657);
     
 }
 
 #subtitle{/*==Selector de clase==*/
     vertical-align: sub;
     font-size: smaller;
+    text-shadow: 2px 2px 6px rgba(231, 228, 208, 0.657);/*==Mismo patrón que el box-shadow==*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
     
+/*==CUERPO PRINCIPAL DE LAS PÁGINAS==*/
 
+/*==INICIAMOS CON INDEX==*/
 
 
     .main{  /*==Selector de clase==*/
@@ -141,12 +152,85 @@ h1{
         
     }    
     main{
-        background-color: rgb(231, 228, 208);
+        background-color: rgb(0, 0, 0);
         background-attachment: fixed;
-        color: black;
         padding: 20px;/*==Para que haya cierto margen con el borde==*/
-        margin-left: 3px;
+        margin-left: 30px;
     }
+
+    .main p{ /*==Selector descendente==*/
+        background-color: rgb(231, 228, 208);
+        color: black;
+        box-sizing: border-box;
+        box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.716);
+        text-align: justify;
+        border: 0;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 8px;
+
+
+    }
+
+    h2{
+    text-align: left;
+}
+.lista1 {
+    background-color: rgb(231, 228, 208);
+    color: black;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.716);
+    text-align: justify;
+    border:0;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+   
+}
+
+.lista1 li{
+    margin-left: 20px;
+    padding:0;
+}
+
+#Rg ul{
+    margin:0;
+    padding: 10px;
+    background-color: black;
+    color: rgb(231, 228, 208);
+    border-radius: 8px;
+
+}
+
+#Rg ul::before{
+    content: " Recordatorio:";
+    display: block;
+    font-weight: bold;
+    
+}
+
+.video {
+    background-color: rgb(231, 228, 208);
+    color: black;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.716);
+    border:0;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    
+}
+#YORHAVideo{
+    width: 100%;
+    height: auto;
+    max-width: 100%; /*==Para que no se salga de la página==*/
+    display:block
+
+}
+
+
+
+
     p{
     font-family: 'Times New Roman', Times, serif;
     color: rgb(231, 228, 208);
@@ -189,7 +273,7 @@ h1{
     }
   
 
-    h2{text-align: center;}
+    
 
 
 
