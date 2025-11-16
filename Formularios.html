@@ -32,6 +32,7 @@
         <section>
             <h2>Formulario de incidencias</h2>
             <form>
+                <div class="Ft">
                 <fieldset >
                     <legend>Datos</legend>
                     <ul> <!--Usamos listas desordenadas para que los formularios queden más ordenados.-->
@@ -65,13 +66,17 @@
                     </ul>
                     
                 </fieldset>
+                </div>
+                <div class="Ft">
                 <fieldset>
                     <legend>Incidente:</legend>
                     <ul>
                         <li>
                             <label for="level">Riesgo estimado: </label>
-                            <input type="range" id="level" min="0" max="100">
-                        </li>
+                            <label for="min">0</label>
+                            <input type="range" id="level" min="0" max="100" oninput="">
+                            <label for="max">100</label>
+                            
                         <li>
                             <label for="priority">Prioridad</label>
                             <input type="radio" id="baja" name="priority" value="baja">
@@ -91,10 +96,11 @@
                     </ul>
 
                 </fieldset>
-
+                </div>
+                <div class="Bt">
                 <button type="submit">Enviar</button>
                 <button type="reset">Borrar</button>
-            
+                </div>
 
 
             </form>
