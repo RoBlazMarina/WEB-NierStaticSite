@@ -323,6 +323,11 @@ dd{
     
     
 }
+img { /*==Para que las imágenes del aside no descuadren toda la página.==*/
+  display: block;
+  max-width: 100%;   /*==Para que mantenga el tamaño de la caja==*/
+  height: auto;      
+}
 
 
 
